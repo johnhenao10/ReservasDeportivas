@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/drawable/ayuda_diseno.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/drawable/botones.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/activity_admin_agregar_escenario.xml" value="0.2" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/activity_admin_categoria.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/activity_home.xml" value="0.22" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/activity_ingresar.xml" value="0.25" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/activity_registrarse.xml" value="0.22" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/activity_reservar_escenario.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/content_activity_home2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/content_reservas.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/content_reservas_escenario.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/escenarios_items_reserva.xml" value="0.1" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/menu/activity_home2.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

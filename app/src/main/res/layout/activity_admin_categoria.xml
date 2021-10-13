@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminAgregarEscenario">
+
+    <TextView
+        android:id="@+id/bienvenida_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="¡Bienvenido!"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/purple_500"
+        android:textStyle="italic"
+
+        />
+    <TextView
+        android:id="@+id/cuerpo_bienvenida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/bienvenida_admin"
+        android:text="Agrega tu escenario deportivo"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/purple_500"
+        android:textStyle="italic"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/agregar_cancha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cuerpo_bienvenida"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="45dp"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/agregar_cancha_sintetica"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:src="@drawable/agregar_cancha"
+
+
+
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

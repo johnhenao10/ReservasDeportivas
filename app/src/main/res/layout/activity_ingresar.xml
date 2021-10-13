@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_registrarse"
+    tools:context=".Ingresar_activity">
+
+    <ImageView
+        android:id="@+id/logo_ingreso"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/logo_aplicacion" />
+
+    <EditText
+        android:id="@+id/ingresar_numero_telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_ingreso"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/ayuda_diseno"
+        android:hint="Escribe tu numero telefonico"
+        android:inputType="number"
+        android:padding="20dp"
+        android:textColorHint="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="italic"
+
+        />
+
+    <EditText
+        android:id="@+id/ingresar_contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ingresar_numero_telefono"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/ayuda_diseno"
+        android:hint="Escribe tu contraseña"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColorHint="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="italic"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/linea_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ingresar_contraseña"
+        android:layout_marginTop="5dp"
+        >
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/boton_recordarme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Material.Drawable.CheckBox"
+            android:text="Recordarme"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:layout_marginLeft="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/olvidar_contraseña"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Olvidaste la contraseña?"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:layout_marginLeft="80dp"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ingresar_boton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linea_layout"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/purple_500"
+        android:padding="20dp"
+        android:text="Ingresar ahora"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/administrador_panel"
+        android:layout_width="221dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/ingresar_boton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="-3dp"
+        android:text="¿Eres administrador?"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/no_admin_panel"
+        android:layout_width="169dp"
+        android:layout_height="54dp"
+        android:layout_below="@+id/ingresar_boton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="180dp"
+        android:text="¿No eres administrador?"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

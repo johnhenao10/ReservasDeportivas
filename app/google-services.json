@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "100103385885",
+    "project_id": "reservasdeportivas-589c3",
+    "storage_bucket": "reservasdeportivas-589c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:100103385885:android:26f1f9a7e1505ad09367f4",
+        "android_client_info": {
+          "package_name": "com.example.reservasdeportivas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "100103385885-qtmr93h343sa5u003ve5qbjuofu4ef52.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.reservasdeportivas",
+            "certificate_hash": "53a7d3e06e9804109c808d963041853531778d55"
+          }
+        },
+        {
+          "client_id": "100103385885-9gi3hhnk840etj1ce8vgq7k2i7v8e3g5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgusn3dqDxvJJanruR-ao0aCT6LQjvBfI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100103385885-9gi3hhnk840etj1ce8vgq7k2i7v8e3g5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

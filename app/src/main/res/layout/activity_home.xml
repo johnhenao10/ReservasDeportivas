@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <Button
+        android:id="@+id/boton_cerrar_sesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="500dp"
+        android:text="Cerrar sesion" />
+
+    <TextView
+        android:id="@+id/bienvenida_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="¡Bienvenido!"
+        android:background="@drawable/ayuda_diseno"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textColor="@color/purple_500"
+        android:textStyle="italic"
+        />
+
+    <TextView
+        android:id="@+id/cuerpo_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/bienvenida_usuario"
+        android:text="Escoge tu escenario deportivo para realizar la reserva"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/purple_500"
+        android:textStyle="italic"
+        />
+
+    <TextView
+        android:id="@+id/titulo_escenario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cuerpo_usuario"
+        android:text="Cancha sintetica"
+        android:textAllCaps="false"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/botones"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        />
+
+    <ImageView
+        android:id="@+id/agregar_cancha_escenario"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/titulo_escenario"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/agregar_cancha"
+
+
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminAgregarEscenario">
+
+    <ImageView
+        android:id="@+id/agregar_imagen_escenario"
+        android:layout_width="325dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/agregar_foto" />
+
+    <Button
+        android:id="@+id/agregar_foto_boton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/agregar_imagen_escenario"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/botones"
+        android:text="Agregar foto"
+        android:textAllCaps="false"
+        android:textSize="17dp"
+        android:textStyle="italic"
+
+
+        />
+    <EditText
+        android:id="@+id/nombre_escenario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/agregar_foto_boton"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/ayuda_diseno"
+        android:hint="Nombre escenario deportivo..."
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        android:textColorHint="@color/black"
+        android:textSize="17dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/direccion_escenario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombre_escenario"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/ayuda_diseno"
+        android:hint="Dirección escenario deportivo..."
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        android:textColorHint="@color/black"
+        android:textSize="17dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/hora_apertura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/direccion_escenario"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/ayuda_diseno"
+        android:hint="Hora apertura del lugar..."
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        android:textColorHint="@color/black"
+        android:textSize="17dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/hora_cierre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hora_apertura"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:hint="Hora cierre del lugar..."
+        android:textSize="17dp"
+        android:textStyle="italic"
+        android:textColorHint="@color/black"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/ayuda_diseno"
+        />
+
+    <Button
+        android:id="@+id/agregar_nuevo_escenario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hora_cierre"
+        android:layout_marginTop="15dp"
+        android:text="Agregar escenario deportivo"
+        android:textSize="17dp"
+        android:textStyle="italic"
+        android:textAllCaps="false"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/botones"
+
+
+        />
+
+
+
+
+
+
+</RelativeLayout>

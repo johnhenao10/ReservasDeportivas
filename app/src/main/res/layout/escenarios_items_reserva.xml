@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    app:cardMaxElevation="15dp"
+    tools:context=".Reservar_escenario">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nombre_cancha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textAlignment="center"
+            android:textColor="@color/purple_500"
+            android:textSize="25dp"
+            android:textStyle="italic" />
+        <ImageView
+            android:id="@+id/foto_cancha"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/nombre_cancha"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="2dp"
+            />
+
+        <TextView
+            android:id="@+id/direccion_cancha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Direccion escenario deportivo"
+            android:layout_below="@id/foto_cancha"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textStyle="italic"
+            android:textColor="@color/purple_500"
+            />
+
+        <TextView
+            android:id="@+id/horaApertura_cancha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/direccion_cancha"
+            android:text="Hora apertura"
+            android:textAlignment="center"
+            android:textColor="@color/purple_500"
+            android:textSize="25dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/horaCierre_cancha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hora cierre "
+            android:layout_below="@id/horaApertura_cancha"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textStyle="italic"
+            android:textColor="@color/purple_500"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
