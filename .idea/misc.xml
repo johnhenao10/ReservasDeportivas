@@ -5,18 +5,34 @@
       <map>
         <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/drawable/ayuda_diseno.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/drawable/botones.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/drawable/button_background_blue.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/drawable/ic_brightness_1_black_24dp.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/activity_admin_agregar_escenario.xml" value="0.2" />
-        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/activity_admin_categoria.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/activity_home.xml" value="0.22" />
-        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/activity_ingresar.xml" value="0.25" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/activity_admin_categoria.xml" value="0.18" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/activity_administrar_reserva.xml" value="0.1" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/activity_gestion_reserva_admin.xml" value="0.16" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/activity_home.xml" value="0.18" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/activity_ingresar.xml" value="0.21" />
         <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/activity_mirar_reservas.xml" value="0.25" />
         <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/activity_registrarse.xml" value="0.22" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/activity_reserva_final_cancha.xml" value="0.21" />
         <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/activity_reservar_escenario.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/app_bar_activity_home2.xml" value="0.1" />
         <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/content_activity_home2.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/content_reservas.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/content_reservas_escenario.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/escenarios_items_reserva.xml" value="0.1" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/escenarios_items_reserva.xml" value="0.2" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/fragment_banner_admin.xml" value="0.12" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/fragment_banner_admin2.xml" value="0.1" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/fragment_banner_admin_dos.xml" value="0.1" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/fragment_banner_admin_tres.xml" value="0.1" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/fragment_banner_tres.xml" value="0.1" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/layout/row_reservas.xml" value="0.15" />
         <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/menu/activity_home2.xml" value="0.1" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/menu/activity_main_drawer.xml" value="0.1" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/JhonL/AndroidStudioProjects/ReservasDeportivas/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.21666666666666667" />
       </map>
     </option>
   </component>

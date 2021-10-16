@@ -1,73 +1,267 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="20dp"
-    android:layout_marginStart="15dp"
-    android:layout_marginEnd="15dp"
-    app:cardMaxElevation="15dp"
-    tools:context=".Reservar_escenario">
+    android:layout_height="match_parent"
+    tools:context=".Reservar_escenario"
+    android:orientation="vertical">
 
-    <RelativeLayout
-
+    <LinearLayout
+        android:id="@+id/lay_one"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_marginTop="5dp"
+            android:clipToPadding="false"
+            android:paddingLeft="28dp"
+            android:paddingRight="28dp">
+
+            <ImageView
+                android:id="@+id/foto_cancha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/agregar_cancha"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_one"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:letterSpacing="0.0265"
+            android:paddingTop="20.3dp"
+            android:paddingBottom="12.9dp"
+            android:text="           "
+            android:textColor="#11cfc5"
+            android:textSize="14.3dp" />
+
+
 
         <TextView
             android:id="@+id/nombre_cancha"
+            style="@style/viewParent.headerText.NoMode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=" "
+            android:layout_weight="6"
+            android:text=""
+            android:textSize="40dp"
+            android:layout_marginTop="-50dp"
             android:textAlignment="center"
-            android:textColor="@color/purple_500"
-            android:textSize="25dp"
-            android:textStyle="italic" />
-        <ImageView
-            android:id="@+id/foto_cancha"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_below="@+id/nombre_cancha"
-            android:scaleType="centerCrop"
-            android:layout_marginTop="2dp"
-            />
+            android:textColor="#11cfc5"
+            android:fontFamily="@font/sf_pro_display_bold"/>
+
+        <View
+            android:layout_width="400dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_marginTop="-50dp"
+            android:layout_marginLeft="0dp"
+            android:background="#11cfc5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:lineSpacingExtra="4.7sp"
+            android:text=""
+            android:textColor="@color/blackTxt"
+            android:textSize="23.3sp" />
 
         <TextView
             android:id="@+id/direccion_cancha"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Direccion escenario deportivo"
-            android:layout_below="@id/foto_cancha"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4.5dp"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:letterSpacing="0.0265"
+            android:text=""
             android:textAlignment="center"
-            android:textSize="25dp"
-            android:textStyle="italic"
-            android:textColor="@color/purple_500"
-            />
+            android:textColor="@color/blackTxt"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/horaApertura_cancha"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/direccion_cancha"
-            android:text="Hora apertura"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4.5dp"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:letterSpacing="0.0265"
+            android:text=""
             android:textAlignment="center"
-            android:textColor="@color/purple_500"
-            android:textSize="25dp"
-            android:textStyle="italic" />
+            android:textColor="@color/blackTxt"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/horaCierre_cancha"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hora cierre "
-            android:layout_below="@id/horaApertura_cancha"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4.5dp"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:letterSpacing="0.0265"
+            android:text=" "
             android:textAlignment="center"
-            android:textSize="25dp"
-            android:textStyle="italic"
-            android:textColor="@color/purple_500"
-            />
+            android:textColor="@color/blackTxt"
+            android:textSize="20sp" />
 
-    </RelativeLayout>
+        <TextView
+            android:layout_width="274dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4.5dp"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:letterSpacing="0.0265"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/grayTxt"
+            android:textSize="13sp" />
 
-</androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="274dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:letterSpacing="0.0265"
+            android:text="RECUERDA: Por la condicion actual relacionada al COVID-19 no se prestara equipacion deportiva como los petos, por favor traer su utileria personal."
+            android:textAlignment="center"
+            android:textColor="@color/grayTxt"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/separar_cancha"
+            style="@style/loginButton"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/horaCierre_cancha"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:text="Termina de realizar tu reserva aquí"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="17dp"
+            android:textStyle="italic" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="11dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_side_bg" />
+
+</RelativeLayout>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginTop="20dp"-->
+<!--    android:layout_marginStart="15dp"-->
+<!--    android:layout_marginEnd="15dp"-->
+<!--    app:cardMaxElevation="15dp"-->
+<!--    tools:context=".Reservar_escenario">-->
+
+<!--    <RelativeLayout-->
+
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/nombre_cancha"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text=" "-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/purple_500"-->
+<!--            android:textSize="25dp"-->
+<!--            android:textStyle="italic" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/foto_cancha"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:layout_below="@+id/nombre_cancha"-->
+<!--            android:layout_marginTop="2dp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:src="@drawable/agregar_cancha" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/direccion_cancha"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/foto_cancha"-->
+<!--            android:text="Direccion escenario deportivo"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/purple_500"-->
+<!--            android:textSize="25dp"-->
+<!--            android:textStyle="italic" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/horaApertura_cancha"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/direccion_cancha"-->
+<!--            android:text="Hora apertura"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/purple_500"-->
+<!--            android:textSize="25dp"-->
+<!--            android:textStyle="italic" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/horaCierre_cancha"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/horaApertura_cancha"-->
+<!--            android:text="Hora cierre "-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/purple_500"-->
+<!--            android:textSize="25dp"-->
+<!--            android:textStyle="italic" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/separar_cancha"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/horaCierre_cancha"-->
+<!--            android:layout_marginLeft="25dp"-->
+<!--            android:layout_marginTop="150dp"-->
+<!--            android:layout_marginRight="25dp"-->
+<!--            android:background="@drawable/botones"-->
+<!--            android:text="Reservar cancha"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textSize="17dp"-->
+<!--            android:textStyle="italic" />-->
+
+
+<!--    </RelativeLayout>-->
+
+
+<!--</androidx.cardview.widget.CardView>-->

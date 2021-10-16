@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -20,8 +21,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class Ingresar_activity extends AppCompatActivity
-{
+import org.w3c.dom.Text;
+
+public class Ingresar_activity extends AppCompatActivity {
     private String BaseDatosNombre = "Usuario";
     private ProgressDialog Cargando;
     private EditText IngresarNumeroTelefono, IngresarContraseña;
@@ -34,16 +36,23 @@ public class Ingresar_activity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ingresar);
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+        }
+        setContentView(R.layout.activity_ingresar);
+
+
         Boton_Ingresar = (Button) findViewById(R.id.ingresar_boton);
         IngresarNumeroTelefono = (EditText) findViewById(R.id.ingresar_numero_telefono);
         IngresarContraseña = (EditText) findViewById(R.id.ingresar_contraseña);
         Ingresar_Administrador = (TextView) findViewById(R.id.administrador_panel);
         Cargando = new ProgressDialog(this);
 
+
         Boton_Ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+
                 Ingresar();
             }
         });
@@ -57,29 +66,25 @@ public class Ingresar_activity extends AppCompatActivity
                 BaseDatosNombre = "Administradores";
 
 
-
             }
         });
 
     }
 
-    private void Ingresar()
-    {
+
+
+
+    private void Ingresar() {
         String NumeroTelefono = IngresarNumeroTelefono.getText().toString();
         String Contraseña = IngresarContraseña.getText().toString();
 
-        if (TextUtils.isEmpty(NumeroTelefono))
-        {
+        if (TextUtils.isEmpty(NumeroTelefono)) {
 
             Toast.makeText(this, "Por favor ingresa un numero telefonico", Toast.LENGTH_SHORT).show();
-        }
-        else if (TextUtils.isEmpty(Contraseña))
-        {
+        } else if (TextUtils.isEmpty(Contraseña)) {
 
             Toast.makeText(this, "Por favor ingresa una contraseña", Toast.LENGTH_SHORT).show();
-        }
-        else
-        {
+        } else {
             Cargando.setTitle("");
             Cargando.setMessage("Por favor espere, estamos comprobando tu informacion");
             Cargando.setCanceledOnTouchOutside(false);
@@ -87,7 +92,6 @@ public class Ingresar_activity extends AppCompatActivity
 
 
             ValidarIngresoCuenta(NumeroTelefono, Contraseña);
-
 
 
         }
@@ -102,33 +106,26 @@ public class Ingresar_activity extends AppCompatActivity
 
         RootRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot)
-            {
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
-                if (dataSnapshot.child(BaseDatosNombre).child(NumeroTelefono).exists())
-                {
+                if (dataSnapshot.child(BaseDatosNombre).child(NumeroTelefono).exists()) {
                     Usuario UsuarioData = dataSnapshot.child(BaseDatosNombre).child(NumeroTelefono).getValue(Usuario.class);
 
-                    if (UsuarioData.getTelefono().equals(NumeroTelefono))
-                    {
-                        if (UsuarioData.getContraseña().equals(Contraseña))
-                        {
+                    if (UsuarioData.getTelefono().equals(NumeroTelefono)) {
+                        if (UsuarioData.getContraseña().equals(Contraseña)) {
                            /* Toast.makeText(Ingresar_activity.this, "Has ingresado con exito", Toast.LENGTH_SHORT).show();
                             Cargando.dismiss();
 
                             Intent intent = new Intent(Ingresar_activity.this, HomeActivity.class);
                             startActivity(intent); */
-                            if (BaseDatosNombre.equals("Administradores"))
-                            {
+                            if (BaseDatosNombre.equals("Administradores")) {
                                 Toast.makeText(Ingresar_activity.this, "Has ingresado con exito", Toast.LENGTH_SHORT).show();
                                 Cargando.dismiss();
 
                                 Intent intent = new Intent(Ingresar_activity.this, AdminCategoria.class);
                                 startActivity(intent);
 
-                            }
-                            else if (BaseDatosNombre.equals("Usuario"))
-                            {
+                            } else if (BaseDatosNombre.equals("Usuario")) {
                                 Toast.makeText(Ingresar_activity.this, "Has ingresado con exito", Toast.LENGTH_SHORT).show();
                                 Cargando.dismiss();
 
@@ -136,22 +133,19 @@ public class Ingresar_activity extends AppCompatActivity
                                 startActivity(intent);
                             }
 
-                        }
-                        else
-                        {
+                        } else {
                             Cargando.dismiss();
                             Toast.makeText(Ingresar_activity.this, "La contraseña es incorrecta", Toast.LENGTH_SHORT).show();
                         }
                     }
 
-                }
-                else
-                {
-                    Toast.makeText( Ingresar_activity.this, "La cuenta que ingresaste con numero"+ NumeroTelefono + "no existe", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(Ingresar_activity.this, "La cuenta que ingresaste con numero" + NumeroTelefono + "no existe", Toast.LENGTH_SHORT).show();
                     Cargando.dismiss();
 
                 }
             }
+
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
@@ -159,4 +153,10 @@ public class Ingresar_activity extends AppCompatActivity
             }
         });
     }
+
+    public void onLoginClick(View view){
+        startActivity(new Intent(this, RegistrarseActivity.class));
+        overridePendingTransition(R.anim.slide_in_right, R.anim.stay);
+    }
 }
+

@@ -100,13 +100,13 @@ public class AdminAgregarEscenario extends AppCompatActivity {
         String Hora_Fin = Hora_Cierre.getText().toString();
 
         if (TextUtils.isEmpty(Nombre_Escenario)) {
-            Toast.makeText(this, "Por favor ingresa un nombre de Usuario", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Por favor ingresa el nombre de tu escenario...", Toast.LENGTH_SHORT).show();
         } else if (TextUtils.isEmpty(Direccion_Escenario)) {
-            Toast.makeText(this, "Por favor ingresa un numero telefonico", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Por favor ingresa la direccion de tu escenario...", Toast.LENGTH_SHORT).show();
         } else if (TextUtils.isEmpty(Hora_Inicio)) {
-            Toast.makeText(this, "Por favor ingresa una contraseña", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Por favor ingresa la hora de apertura...", Toast.LENGTH_SHORT).show();
         } else if (TextUtils.isEmpty(Hora_Fin)) {
-            Toast.makeText(this, "Por favor ingresa una contraseña", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Por favor ingresa la hora de cierre de tu escenario...", Toast.LENGTH_SHORT).show();
         } else {
             Cargando.setTitle("");
             Cargando.setMessage("Por favor espere, estamos comprobando tu informacion");
@@ -144,10 +144,10 @@ public class AdminAgregarEscenario extends AppCompatActivity {
                                 {
                                     if (task.isSuccessful())
                                     {
-                                        Toast.makeText(AdminAgregarEscenario.this, "Felicitaciones, tu cuenta ha sido creada con exito", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(AdminAgregarEscenario.this, "Felicitaciones, tu escenario se ha creado con exito...", Toast.LENGTH_SHORT).show();
                                         Cargando.dismiss();
 
-                                        Intent intent = new Intent(AdminAgregarEscenario.this, HomeActivity.class);
+                                        Intent intent = new Intent(AdminAgregarEscenario.this, AdminCategoria.class);
                                         startActivity(intent);
                                     }
                                     else

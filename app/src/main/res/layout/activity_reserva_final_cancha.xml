@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReservaFinalCancha">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:paddingTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_width="167dp"
+                    android:layout_height="84dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="60dp"
+                    android:text="Termina de realizar tu reserva aquí"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="45dp"
+                    android:src="@drawable/logo" />
+
+            </RelativeLayout>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputEmail"
+        style="@style/parent"
+        android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+    <EditText
+        android:id="@+id/Ingresar_nombre_final"
+        style="@style/modifiedEditText"
+        android:layout_marginTop="225dp"
+        android:hint="Escribe tu nombre..."
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="18dp" />
+
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+        android:id="@+id/seleccionar_fecha"
+        style="@style/loginButton"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Ingresar_nombre_final"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginBottom="25dp"
+        android:text="Selecciona fecha de reserva"
+        app:initialCornerAngle="27dp"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp" />
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/Ingresar_nombre_final"-->
+<!--        android:layout_width="130dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="220dp"-->
+<!--        android:layout_marginBottom="500dp"-->
+<!--        android:inputType="textEmailAddress"-->
+<!--        android:text="" />-->
+
+    <TextView
+        android:id="@+id/mostrar_fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/seleccionar_fecha"
+        android:layout_marginLeft="220dp"
+        android:inputType="textEmailAddress"
+        android:text="" />
+
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+        android:id="@+id/seleccionar_hora_inicio"
+        style="@style/loginButton"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mostrar_fecha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Seleccionar hora inicio reserva"
+        app:initialCornerAngle="27dp"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp" />
+
+    <TextView
+        android:id="@+id/mostrar_hora_inicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/seleccionar_hora_inicio"
+        android:layout_marginLeft="220dp"
+        android:text="" />
+
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+        android:id="@+id/seleccionar_hora_fin"
+        style="@style/loginButton"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mostrar_hora_inicio"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Seleccionar hora fina reserva"
+        app:initialCornerAngle="27dp"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp" />
+
+    <TextView
+        android:id="@+id/mostrar_hora_fin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/seleccionar_hora_fin"
+        android:layout_marginLeft="220dp"
+        android:layout_marginBottom="500dp"
+        android:text="" />
+
+
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+        android:id="@+id/RealizarReserva"
+        style="@style/loginButton"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mostrar_hora_fin"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="-450dp"
+        android:layout_marginBottom="25dp"
+        android:text="RESERVAR CANCHA"
+        app:initialCornerAngle="27dp"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp" />
+
+    <View
+        android:layout_width="11dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_side_bg" />
+
+
+
+
+</RelativeLayout>
+
